@@ -1,4 +1,4 @@
-# CrewAI Task Automation with Agents
+# AI Blogs Generator 
 
 This project automates the process of identifying trends and writing articles using CrewAI, integrating agents like a Senior Researcher and Writer to perform tasks such as research and content creation. Users can provide custom topics, and the agents will analyze and generate the required output using advanced tools.
 
