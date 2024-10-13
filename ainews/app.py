@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from crew import generate_news
+from ainews.crew import generate_news
 import logging
 
 app = Flask(__name__)
