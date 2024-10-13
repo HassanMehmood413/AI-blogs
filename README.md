@@ -6,7 +6,6 @@ This project automates the process of identifying trends and writing articles us
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
-  - [Installing Python](#installing-python)
   - [Setting up Virtual Environment](#setting-up-virtual-environment)
   - [Installing Dependencies](#installing-dependencies)
 - [Running the Project](#running-the-project)
@@ -72,12 +71,8 @@ Before running the application, it's recommended to create a virtual environment
 
     After activation, your terminal prompt should change to indicate that you are now working within the virtual environment.
 
-4. **Deactivate the virtual environment** (when done):
-    ```bash
-    deactivate
-    ```
 
-5. **Install backend dependencies:**
+4. **Install backend dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
