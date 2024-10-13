@@ -10,11 +10,7 @@ This project automates the process of identifying trends and writing articles us
   - [Setting up Virtual Environment](#setting-up-virtual-environment)
   - [Installing Dependencies](#installing-dependencies)
 - [Running the Project](#running-the-project)
-- [How It Works](#how-it-works)
-  - [Agents](#agents)
-  - [Tasks](#tasks)
-  - [Tools](#tools)
-- [Market Analysis - SAM, SOM, TOM](#market-analysis---sam-som-tom)
+-[Important Note](#important-note)
 
 ## Project Overview
 
@@ -47,7 +43,7 @@ python --version
 
 ```
 
-## Setting Up the Environment
+## Running the project
 
 ### Creating a Virtual Environment
 
@@ -101,7 +97,7 @@ To run the app:
     ```
 3. ***Open the localhost link from terminal***
 
-### Notes
+### Important Note
 
 - If you get any error make sure to add the Serper API key.
 - Configure the API keys and endpoints according to your backend setup.
