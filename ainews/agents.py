@@ -1,5 +1,5 @@
 from crewai import Agent
-from tools import tool
+from ainews.tools import tool  # Updated import for tools
 from dotenv import load_dotenv
 load_dotenv()
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -11,17 +11,19 @@ logging.basicConfig(level=logging.INFO)
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
 def create_llm():
-    return ChatGoogleGenerativeAI(model="gemini-1.5-flash",
-                                  verbose=True,
-                                  temperature=0.5,
-                                  google_api_key=os.getenv("GOOGLE_API_KEY"))
+    return ChatGoogleGenerativeAI(
+        model="gemini-1.5-flash",
+        verbose=True,
+        temperature=0.5,
+        google_api_key=os.getenv("GOOGLE_API_KEY")
+    )
 
 try:
     llm = create_llm()
 
     news_researcher = Agent(
         role="Senior Researcher",
-        goal='Uncover ground breaking technologies in {topic}',
+        goal='Uncover groundbreaking technologies in {topic}',
         verbose=True,
         memory=True,
         backstory=(
